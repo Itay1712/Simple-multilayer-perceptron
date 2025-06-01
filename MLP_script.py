@@ -343,7 +343,7 @@ def plot_number(pixels_array):
 
 def main():
     train = False  ## set to False for testing mode.
-    data = pd.read_csv('train.csv').to_numpy()
+    data = pd.read_csv('mnist_data.csv').to_numpy()
     split_idx = int(0.8 * len(data))
     data_train = data[:split_idx]
     data_test = data[split_idx:]
